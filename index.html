@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container text-center d-flex flex-column gap-3">
+    <h2 class="my-5">STRING METHODS</h2>
+
+    <div class="stringlength bg-dark-subtle p-3">
+      <h3>STRING LENGTH</h3>
+      <input type="text" id="length" class="my-2" placeholder="Enter any text">
+      <button type="button" id="lenbtn">Enter</button>
+      <p>The length of your string is:</p>
+      <p id="strlen"></p>
+    </div>
+
+    <div class="string-slice bg-dark-subtle p-3">
+      <h3>STRING SLICE</h3>
+      <input type="text" id="slice" class="my-2" placeholder="Enter any text">
+      <p>Enter the values to slice</p>
+      <input type="text" id="slice1" placeholder="value start">
+      <input type="text" id="slice2" placeholder="value end">
+      <button id="valuebtn1" type="button">Enter</button>
+      <p class="my-2">sliced value is:</p>
+      <p id="strslice"></p>
+    </div>
+
+    <div class="string-substring bg-dark-subtle p-3">
+      <h3>STRING SUBSTRING</h3>
+      <input type="text" id="substring" class="my-2" placeholder="Enter any text">
+      <p>Enter the values to Subsstring</p>
+      <input type="text" id="subs1" placeholder="value start">
+      <input type="text" id="subs2" placeholder="value end">
+      <button id="valuebtn2" type="button">Enter</button>
+      <p class="my-2">SubStringed value is:</p>
+      <p id="strsub"></p>
+    </div>
+
+    <div class="string-substr bg-dark-subtle p-3">
+      <h3>STRING SUBSTR</h3>
+      <input type="text" id="substr" class="my-2" placeholder="Enter any text">
+      <p>Enter the values to SubStr</p>
+      <input type="text" id="ss1" placeholder="value start"> 
+      <input type="text" id="ss2" placeholder="value end">
+      <button id="valuebtn3" type="button">Enter</button>
+      <p class="my-2">SubStr value is:</p>
+      <p id="sstr"></p>
+    </div>
+
+    <div class="string-replace bg-dark-subtle p-3">
+      <h3>STRING REPLACE</h3>
+      <input type="text" id="replace" class="my-2" placeholder="Enter any text">
+      <p>Enter the values to replace</p>
+      <input type="text" id="toreplace" placeholder="to replace">
+      <input type="text" id="revalue" placeholder="replace"> 
+      <button id="valuebtn4" type="button">Enter</button>
+      <p class="my-2">Replaced value is:</p>
+      <p id="strreplace"></p>
+    </div>
+
+    <div class="string-replaceAll bg-dark-subtle p-3">
+      <h3>STRING REPLACE ALL</h3>
+      <input type="text" id="replaceAll" class="my-2" placeholder="Enter any text">
+      <p>Enter the values to replace all</p>
+      <input type="text" id="toreplaceAll" placeholder="to replace all">
+      <input type="text" id="revalueAll" placeholder="replace all"> 
+      <button id="valuebtn5" type="button">Enter</button>
+      <p class="my-2">Replaced value is:</p>
+      <p id="strreplaceAll"></p>
+    </div>
+
+    <div class="string-uppercase bg-dark-subtle p-3">
+      <h3>STRING toUpperCase</h3>
+      <input type="text" id="uppercase" class="my-2" placeholder="Enter any text">
+      <button id="valuebtn6" type="button">Enter</button>
+      <p class="my-2">uppercased value is:</p>
+      <p id="strupper"></p>
+    </div>
+
+    <div class="string-lowercase bg-dark-subtle p-3">
+      <h3>STRING toLowerCase</h3>
+      <input type="text" id="lowercase" class="my-2" placeholder="Enter any text">
+      <button id="valuebtn7" type="button">Enter</button>
+      <p class="my-2">uppercased value is:</p>
+      <p id="strlower"></p>
+    </div>
+
+    <div class="string-concat bg-dark-subtle p-3">
+      <h3>STRING CONCAT</h3>
+      <input type="text" id="concat" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to Concat</p>
+      <input type="text" id="plus" placeholder="to Add"> 
+      <button id="valuebtn8" type="button">Enter</button>
+      <p class="my-2">Concated value is:</p>
+      <p id="strconcat"></p>
+    </div>
+
+    <div class="string-trim bg-dark-subtle p-3">
+      <h3>STRING TRIM</h3>
+      <input type="text" id="trim" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to Trim</p>
+      <button id="valuebtn9" type="button">Enter</button>
+      <p class="my-2">Trimmed value is:</p>
+      <p id="strtrim"></p>
+    </div>
+
+    <div class="string-trimstart bg-dark-subtle p-3">
+      <h3>STRING TRIM START</h3>
+      <input type="text" id="trimStart" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to Trim Start</p>
+      <button id="valuebtn10" type="button">Enter</button>
+      <p class="my-2">Trimmed start value is:</p>
+      <p id="strtrimS"></p>
+    </div>
+
+    <div class="string-trimend bg-dark-subtle p-3">
+      <h3>STRING TRIM END</h3>
+      <input type="text" id="trimEnd" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to Trim End</p>
+      <button id="valuebtn11" type="button">Enter</button>
+      <p class="my-2">Trimmed end value is:</p>
+      <p id="strtrimE"></p>
+    </div>
+
+    <div class="string-padstart bg-dark-subtle p-3">
+      <h3>STRING PAD START</h3>
+      <input type="text" id="padStart" class="my-2" placeholder="value here">
+      <p>Enter the inputs to Pad Start</p>
+      <input type="text" id="padlen1" placeholder="Enter Value">
+      <input type="text" id="padS" placeholder="Enter Pad Length">
+      <button id="valuebtn12" type="button">Enter</button>
+      <p class="my-2">Pad Start value is:</p>
+      <p id="strPadS"></p>
+    </div>
+
+    <div class="string-padend bg-dark-subtle p-3">
+      <h3>STRING PAD END</h3>
+      <input type="text" id="padEnd" class="my-2" placeholder="value here">
+      <p>Enter the inputs to Pad Start</p>
+      <input type="text" id="padlen2" placeholder="Enter Value">
+      <input type="text" id="padE" placeholder="Enter Pad Length">
+      <button id="valuebtn13" type="button">Enter</button>
+      <p class="my-2">Pad Start value is:</p>
+      <p id="strPadE"></p>
+    </div>
+
+    <div class="string-charAt bg-dark-subtle p-3">
+      <h3>STRING charAt() </h3>
+      <input type="text" id="charAt" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to charAt</p>
+      <input type="text" id="char" placeholder="Enter value">
+      <button id="valuebtn14" type="button">Enter</button>
+      <p class="my-2">charAt value is:</p>
+      <p id="strchar"></p>
+    </div>
+
+    <div class="string-split bg-dark-subtle p-3">
+      <h3>STRING SPLIT </h3>
+      <input type="text" id="split" class="my-2" placeholder="Enter any text">
+      <p>Enter the inputs to charAt</p>
+      <input type="text" id="spliting" placeholder="Enter value">
+      <button id="valuebtn15" type="button">Enter</button>
+      <p class="my-2">charAt value is:</p>
+      <p id="strsplit"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
